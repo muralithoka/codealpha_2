@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI FAQ Chatbot</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',filename='style.css') }}">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-robot"></i>
+
+        </div>
+
+        <div>
+
+            <h1>AI FAQ Assistant</h1>
+
+            <p>Ask anything about AI, Python, Machine Learning & Technology</p>
+
+        </div>
+
+    </div>
+
+    <div id="chatBox"
+         class="chat-box">
+
+        <div class="bot-message">
+
+            👋 Hello!
+
+            <br><br>
+
+            I am your AI FAQ Assistant.
+
+            <br>
+
+            Ask me anything related to AI,
+            Machine Learning,
+            Python,
+            Data Science,
+            NLP,
+            Web Development
+            and more.
+
+        </div>
+
+    </div>
+
+    <div class="suggestions">
+
+        {% for item in suggestions %}
+
+        <button
+        onclick="askSuggestion('{{item}}')">
+
+        {{item}}
+
+        </button>
+
+        {% endfor %}
+
+    </div>
+
+    <div class="input-area">
+
+        <input
+        id="userInput"
+        type="text"
+        placeholder="Type your question here...">
+
+        <button
+        onclick="sendMessage()">
+
+        <i class="fa-solid fa-paper-plane"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+const input=document.getElementById("userInput");
+
+input.addEventListener("keypress",function(e){
+
+if(e.key==="Enter"){
+
+sendMessage();
+
+}
+
+});
+
+function addMessage(message,type){
+
+const chat=document.getElementById("chatBox");
+
+const div=document.createElement("div");
+
+div.className=type;
+
+div.innerHTML=message;
+
+chat.appendChild(div);
+
+chat.scrollTop=chat.scrollHeight;
+
+}
+
+function askSuggestion(question){
+
+input.value=question;
+
+sendMessage();
+
+}
+
+function sendMessage(){
+
+const message=input.value.trim();
+
+if(message==="") return;
+
+addMessage(message,"user-message");
+
+input.value="";
+
+const typing=document.createElement("div");
+
+typing.className="typing";
+
+typing.id="typing";
+
+typing.innerHTML=
+
+"<span></span><span></span><span></span>";
+
+document.getElementById("chatBox").appendChild(typing);
+
+document.getElementById("chatBox").scrollTop=
+document.getElementById("chatBox").scrollHeight;
+
+fetch("/chat",{
+
+method:"POST",
+
+headers:{
+
+"Content-Type":"application/json"
+
+},
+
+body:JSON.stringify({
+
+message:message
+
+})
+
+})
+
+.then(response=>response.json())
+
+.then(data=>{
+
+document.getElementById("typing").remove();
+
+addMessage(data.answer,"bot-message");
+
+})
+
+.catch(error=>{
+
+document.getElementById("typing").remove();
+
+addMessage(
+
+"Something went wrong!",
+
+"bot-message"
+
+);
+
+});
+
+}
+
+</script>
+
+</body>
+
+</html>

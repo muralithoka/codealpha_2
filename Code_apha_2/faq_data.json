@@ -1,0 +1,162 @@
+[
+    {
+        "question": "What is Artificial Intelligence?",
+        "answer": "Artificial Intelligence (AI) is the simulation of human intelligence by machines that can learn, reason, and solve problems."
+    },
+    {
+        "question": "What is Machine Learning?",
+        "answer": "Machine Learning is a branch of AI that enables computers to learn from data without being explicitly programmed."
+    },
+    {
+        "question": "What is Deep Learning?",
+        "answer": "Deep Learning is a subset of Machine Learning that uses neural networks with multiple layers to solve complex problems."
+    },
+    {
+        "question": "What is Natural Language Processing?",
+        "answer": "Natural Language Processing (NLP) enables computers to understand, process, and generate human language."
+    },
+    {
+        "question": "What is Computer Vision?",
+        "answer": "Computer Vision is an AI field that enables computers to understand and analyze images and videos."
+    },
+    {
+        "question": "What is Data Science?",
+        "answer": "Data Science is the process of extracting meaningful insights from structured and unstructured data using statistics, programming, and machine learning."
+    },
+    {
+        "question": "What is Python?",
+        "answer": "Python is a popular programming language known for its simplicity and wide use in AI, Data Science, and Web Development."
+    },
+    {
+        "question": "What is Flask?",
+        "answer": "Flask is a lightweight Python web framework used to build web applications quickly."
+    },
+    {
+        "question": "What is Django?",
+        "answer": "Django is a high-level Python web framework designed for rapid and secure web development."
+    },
+    {
+        "question": "What is TensorFlow?",
+        "answer": "TensorFlow is an open-source machine learning framework developed by Google."
+    },
+    {
+        "question": "What is PyTorch?",
+        "answer": "PyTorch is an open-source deep learning framework developed by Meta for building AI models."
+    },
+    {
+        "question": "What is SQL?",
+        "answer": "SQL is a programming language used to store, retrieve, and manage data in relational databases."
+    },
+    {
+        "question": "What is a Database?",
+        "answer": "A database is an organized collection of data that can be easily accessed and managed."
+    },
+    {
+        "question": "What is Cloud Computing?",
+        "answer": "Cloud Computing provides computing services such as storage, servers, and databases over the internet."
+    },
+    {
+        "question": "What is Generative AI?",
+        "answer": "Generative AI creates new content such as text, images, music, and code using trained AI models."
+    },
+    {
+        "question": "What is ChatGPT?",
+        "answer": "ChatGPT is an AI chatbot developed by OpenAI that understands and generates human-like text."
+    },
+    {
+        "question": "What is an API?",
+        "answer": "An API (Application Programming Interface) allows different software applications to communicate with each other."
+    },
+    {
+        "question": "What is Git?",
+        "answer": "Git is a distributed version control system used to track changes in source code."
+    },
+    {
+        "question": "What is GitHub?",
+        "answer": "GitHub is a cloud platform for hosting Git repositories and collaborating on software projects."
+    },
+    {
+        "question": "What is HTML?",
+        "answer": "HTML is the standard markup language used to create webpages."
+    },
+    {
+        "question": "What is CSS?",
+        "answer": "CSS is used to style HTML webpages by controlling colors, layouts, fonts, and animations."
+    },
+    {
+        "question": "What is JavaScript?",
+        "answer": "JavaScript is a scripting language that makes webpages interactive."
+    },
+    {
+        "question": "What is a Neural Network?",
+        "answer": "A Neural Network is a machine learning model inspired by the human brain."
+    },
+    {
+        "question": "What is Supervised Learning?",
+        "answer": "Supervised Learning is a machine learning technique where models learn using labeled data."
+    },
+    {
+        "question": "What is Unsupervised Learning?",
+        "answer": "Unsupervised Learning finds hidden patterns in data without labeled outputs."
+    },
+    {
+        "question": "What is Reinforcement Learning?",
+        "answer": "Reinforcement Learning trains an agent to make decisions by rewarding good actions."
+    },
+    {
+        "question": "What is a Chatbot?",
+        "answer": "A chatbot is software that interacts with users through text or voice conversations."
+    },
+    {
+        "question": "What is OpenCV?",
+        "answer": "OpenCV is an open-source computer vision library used for image and video processing."
+    },
+    {
+        "question": "What is Pandas?",
+        "answer": "Pandas is a Python library used for data analysis and manipulation."
+    },
+    {
+        "question": "What is NumPy?",
+        "answer": "NumPy is a Python library for numerical computing and array operations."
+    },
+    {
+        "question": "What is Matplotlib?",
+        "answer": "Matplotlib is a Python library used for creating charts and visualizations."
+    },
+    {
+        "question": "What is Scikit-learn?",
+        "answer": "Scikit-learn is a Python machine learning library that provides algorithms for classification, regression, clustering, and more."
+    },
+    {
+        "question": "What is Regression?",
+        "answer": "Regression predicts continuous numerical values using machine learning."
+    },
+    {
+        "question": "What is Classification?",
+        "answer": "Classification predicts categories or labels based on input data."
+    },
+    {
+        "question": "What is Clustering?",
+        "answer": "Clustering groups similar data points together without predefined labels."
+    },
+    {
+        "question": "What is Big Data?",
+        "answer": "Big Data refers to extremely large datasets that require advanced processing techniques."
+    },
+    {
+        "question": "What is IoT?",
+        "answer": "The Internet of Things (IoT) connects physical devices to the internet for communication and automation."
+    },
+    {
+        "question": "What is Blockchain?",
+        "answer": "Blockchain is a decentralized digital ledger that securely records transactions."
+    },
+    {
+        "question": "What is Cyber Security?",
+        "answer": "Cyber Security protects systems, networks, and data from cyber threats."
+    },
+    {
+        "question": "Who developed ChatGPT?",
+        "answer": "ChatGPT was developed by OpenAI."
+    }
+]
